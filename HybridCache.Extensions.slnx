@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HybridCache.MessagePack/HybridCache.MessagePack.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HybridCache.MessagePack.Tests/HybridCache.MessagePack.Tests.csproj" />
+  </Folder>
+</Solution>
