@@ -15,9 +15,7 @@ jobs:
         with:
           dotnet-version: "10"
       - name: Pack
-        run: |
-          version=${GITHUB_REF#refs/tags/v}
-          ./pack.sh $version
+        run: ./pack.sh ${GITHUB_REF#refs/tags/}
       - name: Publish to NuGet
         env:
           nuget_key: ${{ secrets.NUGETAPIKEY }}
